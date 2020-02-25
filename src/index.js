@@ -29,7 +29,7 @@ function App() {
             type="text"
             placeholder="William"
             value={name}
-            onChange={event => setName(e.target.value)}
+            onChange={event => setName(event.target.value)}
           />
         </div>
 
@@ -41,7 +41,7 @@ function App() {
             type="number"
             placeholder="38"
             value={age}
-            onChange={event => setAge(e.target.value)}
+            onChange={event => setAge(+event.target.value)}
           />
         </div>
       </div>

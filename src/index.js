@@ -15,8 +15,8 @@ function App() {
 
       {/* Display Data */}
       <div className="input-display">
-        <p>Display Name: </p>
-        <p>Display Age: </p>
+        <p>Display Name:{name} </p>
+        <p>Display Age: {age}</p>
       </div>
 
       {/* Collect User Inputs */}
@@ -29,7 +29,7 @@ function App() {
             type="text"
             placeholder="William"
             value={name}
-            onChange={event => setName(event.target.value)}
+            onChange={event => setName(e.target.value)}
           />
         </div>
 
@@ -41,7 +41,7 @@ function App() {
             type="number"
             placeholder="38"
             value={age}
-            onChange={event => setAge(event.target.value)}
+            onChange={event => setAge(e.target.value)}
           />
         </div>
       </div>
